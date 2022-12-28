@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genshin Impact Song Creator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+	<div id="allContainer">
+		<div id="noti"><p>This is made for a Genshin Impact song auto-player, found  <a href="" title="PROGRAM UNDER DEVELOPMENT"> here</a>.</p></div>
+		<button onclick="newSong()" id="newbtn">New Song</button>
+		<br>
+	
+		<div id="itemContainer">
+		
+			<div id="statsContainer" class="container-div">
+				<span id="notesCounter">Notes: 0</span>
+				<br>
+				<span id="lengthCounter">Length: 0 Seconds</span>
+			</div>
+	
+			<br>
+		
+			<div id="optionsContainer" class="container-div">
+				<label for="songName">Song Name:</label>
+				<span id="songName" onclick="changename()">Name</span>
+				<br>
+				<label for="songBPM">BPM:</label>
+				<input id="songBPM" type="range" min="20" max="200" value="60" oninput="labelBPM()">
+				<span id="bpmdisplay">60</span>
+			</div>
+			<br>
+			<div id="noteContainer" class="container-div">
+			</div>
+		</div>
+		
+		<br>
+		<button onclick="addNote()" id="addbtn" >Add Note</button>
+		<button onclick="readNotes()" id="downloadbtn" >Download File</button>
+	</div>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
